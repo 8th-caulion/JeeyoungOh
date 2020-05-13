@@ -1,0 +1,10 @@
+
+새 글 쓰기
+
+<form method="post" action="{% url 'create' %}">
+    {% csrf_token %}
+    <input name="title"/> <br>
+    <input name="content"/>
+    <input name="pub_date"/>
+    <input type="submit"/>
+</form>

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block contents %}
+
+<div  class="container">
+<form action="{% url 'login' %}" method="POST">
+    {% csrf_token %}
+    <h3>로그인이다</h3>
+    ID: <input name="username" />
+    <br />
+    PW: <input name="password" type="password"/>
+    <input type="submit"  value="login" class="btn btn-success">
+</form>
+{{error}}
+</div>
+
+{% endblock %}

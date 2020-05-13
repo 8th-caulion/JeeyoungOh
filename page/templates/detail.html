@@ -44,5 +44,8 @@
   <p>{{details.body}}</p>
 </div>
 
+<a href = "{% url 'edit' details.id %}"  button type="button" class = "btn btn-secondary">Edit blog</a>
+<a href = "{% url 'delete' details.id %}"  button type="button" class = "btn btn-danger">Delete  blog</a>
+
 </body>
 </html>

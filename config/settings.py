@@ -27,6 +27,7 @@ INSTALLED_APPS = [
     'page.apps.PageConfig',
     'information.apps.InformationConfig',
     'django.contrib.staticfiles',
+    'accounts'
 ]
 
 MIDDLEWARE = [
